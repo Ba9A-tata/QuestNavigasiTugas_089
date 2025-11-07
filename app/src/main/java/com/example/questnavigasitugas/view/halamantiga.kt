@@ -47,3 +47,32 @@ fun ListDaftarPeserta(
     }
 }
 
+
+@Composable
+fun TampilkanDataCard(label: String, value: String, cardColor: Color) {
+    Column(modifier = Modifier.fillMaxWidth()) {
+
+        Text(
+            text = label,
+            fontWeight = FontWeight.Bold,
+            color = Color(0xFF4B0082),
+            fontSize = 14.sp,
+            modifier = Modifier.padding(bottom = 6.dp)
+        )
+
+        Surface(
+            color = cardColor,
+            shape = RoundedCornerShape(8.dp),
+            modifier = Modifier.fillMaxWidth().heightIn(min = 50.dp)
+        ) {
+
+            Text(
+                text = value,
+                fontSize = 18.sp,
+                color = Color.Black,
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
+                textAlign = TextAlign.Start
+            )
+        }
+    }
+}
