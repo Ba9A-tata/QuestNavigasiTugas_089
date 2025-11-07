@@ -39,4 +39,15 @@ fun HalamanSelamatDatang(
                 Text(text = "7X CHAMPPP", fontSize = 18.sp, fontWeight = FontWeight.Normal, color = Color.Black)
             }
 
+            Button(
+                onClick = onSubmitClick,
+                modifier = Modifier.fillMaxWidth().height(50.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = purpleButtonColor)
+            ) {
+                Text("Submit", fontSize = 18.sp)
+            }
+        }
+    }
+}
+
         }
