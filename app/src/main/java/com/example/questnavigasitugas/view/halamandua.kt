@@ -27,3 +27,16 @@ fun HalamanSelamatDatang(
 
                 Spacer(modifier = Modifier.height(30.dp))
 
+                Image(
+                    painter = painterResource(id = R.drawable.logo_93),
+                    contentDescription = "Logo Aplikasi",
+                    modifier = Modifier.size(400.dp).padding(1.dp)
+                )
+            }
+
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(text = "MORE THAN A NUMBER !!", fontSize = 20.sp, fontWeight = FontWeight.Medium, color = Color.Black)
+                Text(text = "7X CHAMPPP", fontSize = 18.sp, fontWeight = FontWeight.Normal, color = Color.Black)
+            }
+
+        }
