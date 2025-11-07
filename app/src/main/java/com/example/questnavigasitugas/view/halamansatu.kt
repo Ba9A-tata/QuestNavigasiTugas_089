@@ -26,6 +26,32 @@ fun DateApp(
                         navController.navigate(Navigasi.ListDetail.name)
                     }
                 )
+            }
+
+            composable(route = Navigasi.ListDetail.name) {
+
+                ListDaftarPeserta(
+
+                    onBerandaClick = {
+                        navController.popBackStack(Navigasi.SelamatDatang.name, inclusive = false)
+                    },
+                    onFormulirPendaftaranClick = {
+                        navController.navigate(Navigasi.Formulirku.name)
+                    }
+                )
+            }
+
+            composable(route = Navigasi.Formulirku.name) {
+                FormIsian(
+
+                    onSubmitBtnClick = {
+
+                        navController.popBackStack(
+                            route = Navigasi.ListDetail.name,
+                            inclusive = false
+                        )
+                    }
+                )
 
             }
         }
